@@ -1,0 +1,143 @@
+body {
+    background-image: url('../fundo.png');
+    background-size: cover; 
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #d8d8d8; 
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+p {
+    color: white; 
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); 
+}
+
+a, button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #663bca;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+}
+
+a:hover, button:hover {
+    background-color: #6e00a1; 
+    color: #ffffff;
+}
+
+form {
+    background-color: #ffffff; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    width: 100%;
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+label {
+    font-weight: bold;
+    color: #3b4cca;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+    color: #333;
+}
+
+textarea {
+    resize: vertical; 
+    min-height: 100px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #3b4cca;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tr:last-child td {
+    border-bottom: none; 
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #e6f7ff;
+}
+
+td[colspan="8"] {
+    text-align: center;
+    color: #ffffff;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    table, th, td {
+        font-size: 0.9em;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    a, button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
