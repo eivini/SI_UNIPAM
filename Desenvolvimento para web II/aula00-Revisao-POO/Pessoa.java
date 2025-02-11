@@ -2,7 +2,7 @@ public class Pessoa {
     
     private String nome;
     private int idade;
-    private long CPF;
+    private long cpf;
 
     public Pessoa(){
         this("", 0, 0);
@@ -12,10 +12,10 @@ public class Pessoa {
         this(nome, idade, 0);
     }
 
-    public Pessoa(String nome, int idade, long CPF){
+    public Pessoa(String nome, int idade, long cpf){
         this.nome = nome;
         this.idade = idade;
-        this.CPF = CPF;
+        this.cpf = cpf;
     }
 
     public void setNome(String nome){
@@ -34,16 +34,16 @@ public class Pessoa {
         return this.idade;
     }
 
-    public void setCPF(long CPF){
-        this.CPF = CPF;
+    public void seCpf(long cpf){
+        this.cpf = cpf;
     }
 
-    public long getCPF() {
-        return this.CPF;
+    public long getCpf() {
+        return this.cpf;
     }
 
     @Override
     public String toString(){
-        return "Pessoa{Nome=" + this.getNome() + ", Idade=" + this.getIdade() + ", CPF=" + this.getCPF() + "}";
+        return "Pessoa{Nome=" + this.getNome() + ", Idade=" + this.getIdade() + ", CPF=" + this.getCpf() + "}";
     }
 }
