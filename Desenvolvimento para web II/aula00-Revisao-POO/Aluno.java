@@ -7,7 +7,7 @@ public class Aluno extends Pessoa{
     }
 
     public Aluno(String nome, int idade){
-        //this(nome, idade, 0l, 0);
+        this(nome, idade, 0l, 0);
     }
 
     public Aluno(String nome, int idade, long cpf, int matriculaAluno){
@@ -25,7 +25,11 @@ public class Aluno extends Pessoa{
 
     @Override
     public String toString(){
-        return "Aluno{" + super.toString() + ", matricula=" + getMatriculaAluno() + "}";
+        return "\n Aluno{" + 
+                super.toString() + 
+                ", matricula=" + 
+                getMatriculaAluno() +
+                "}";
     }
 
 }
