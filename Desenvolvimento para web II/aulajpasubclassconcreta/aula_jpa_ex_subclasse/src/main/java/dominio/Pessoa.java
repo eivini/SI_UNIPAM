@@ -5,9 +5,6 @@ import javax.persistence.Entity;
 
 @Entity // entidade de domínio
 public class Professor extends Pessoa {
-    // private static final long serialVersionUID = 1L; //Id padrão do Serializable
-    // @Id
-    // @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int matriculaProfessor;
 
     public Professor() {
@@ -29,15 +26,6 @@ public class Professor extends Pessoa {
 
     @Override
     public String toString() {
-        return "Professor [idPessoa= " + super.getIdPessoa() + ", nome= " + super.getNome() +
-                ", matriculaProfessor= "
-                + getMatriculaProfessor() + "]";
+        return "Professor [idPessoa= " + super.getIdPessoa() + ", nome= " + super.getNome() + ", matriculaProfessor= " + getMatriculaProfessor() + "]";
     }
-    /*
-     * public void imprimeDados() {
-     * System.out.println("Nome: "+ super.getNome());
-     * System.out.println("CPF: "+ super.getCpf());
-     * System.out.println("Matricula Professor: "+ getMatriculaProfessor());
-     * }
-     */
 }
