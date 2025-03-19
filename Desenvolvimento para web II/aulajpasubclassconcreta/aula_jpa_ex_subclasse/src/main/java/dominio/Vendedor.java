@@ -5,20 +5,20 @@ import javax.persistence.Entity;
 
 @Entity // entidade de domínio
 public class Professor extends Pessoa {
-    private int matriculaProfessor;
-
-    public Professor() {
-        this("", "", 0);
-    }
-
-    public Professor(String nome, String cpf, int matriculaProfessor) {
-        super(nome, cpf);
-        setMatriculaProfessor(matriculaProfessor);
-    }
-
-    public int getMatriculaProfessor() {
-        return this.matriculaProfessor;
-    }
+    private iVendedor extends Pessoa {
+	
+	//private static final long serialVersionUID = 1L; //Id padrão do Serializable
+	
+	//@Id
+	//@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
+	private int matriculaProfessor;
+	
+	public Vendedor() {
+		this("","",0);
+	}
+	
+	public Vendedor
 
     public void setMatriculaProfessor(int matriculaProfessor) {
         this.matriculaProfessor = matriculaProfessor;

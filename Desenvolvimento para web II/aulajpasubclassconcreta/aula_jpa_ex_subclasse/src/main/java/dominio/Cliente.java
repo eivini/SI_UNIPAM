@@ -5,17 +5,17 @@ import javax.persistence.Entity;
 
 @Entity // entidade de domínio
 public class Aluno extends Pessoa {
-    private int matriculaAluno;
-
-    public Aluno() {
-        this("", "", 0);
-    }
-
-    public Aluno(String nome, String cpf, int matriculaAluno) {
-        super(nome, cpf);
-        setMatriculaAluno(matriculaAluno);
-    }
-
+    private iCliente extends Pessoa {
+	
+	//private static final long serialVersionUID = 1L; //Id padrão do Serializable
+	
+	private int matriculaAluno;
+	
+	public Cliente() {
+		this("","",0);
+	}
+	
+	public Cliente
     public int getMatriculaAluno() {
         return this.matriculaAluno;
     }
