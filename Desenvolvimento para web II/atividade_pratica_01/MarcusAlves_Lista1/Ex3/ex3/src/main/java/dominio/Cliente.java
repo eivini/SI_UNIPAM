@@ -4,7 +4,6 @@ import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
 @Entity //entidade de domínio
-@DiscriminatorValue("C")
 public class Cliente extends Pessoa {
 	
 	//private static final long serialVersionUID = 1L; //Id padrão do Serializable

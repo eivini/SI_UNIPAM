@@ -15,7 +15,7 @@ import javax.persistence.OneToOne;
 
 
 @Entity
-@Inheritance(strategy = InheritanceType.SINGLE_TABLE) //identifica que apenas UMA tabela será criada no banco de dados.
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS) //identifica que apenas UMA tabela será criada no banco de dados.
 @DiscriminatorColumn(name = "tipo", length = 1, discriminatorType = DiscriminatorType.STRING)
 //public class Pessoa implements Serializable {
 public class Pessoa{
@@ -23,7 +23,7 @@ public class Pessoa{
 	//private static final long serialVersionUID = 1L; //Id padrão do Serializable
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.TABLE)
 	private long idPessoa;
 	private String nome;
 	private int idade;
